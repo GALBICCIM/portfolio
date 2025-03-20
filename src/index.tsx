@@ -5,11 +5,12 @@ import { EmblaOptionsType } from "embla-carousel";
 import "./components/carousel/embla.css";
 import { GlobalFont } from "./fonts/GlobalFont";
 
-const OPTIONS: EmblaOptionsType = { loop: false };
-const SLIDE_COUNT = 4;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+const OPTIONS: EmblaOptionsType = {
+	loop: false,
+	containScroll: "trimSnaps"
+};
 
-const App: React.FC = () => <EmblaCarousel slides={SLIDES} options={OPTIONS} />;
+const App: React.FC = () => <EmblaCarousel options={OPTIONS} />;
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(

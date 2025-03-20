@@ -1,18 +1,13 @@
 .embla {
-   max-width: 100vw;
-   margin: auto;
-   --slide-size: 100%;
+	max-width: 100vw;
+	margin: auto;
+	--slide-size: 100%;
 }
 
 .embla__viewport {
-   overflow: hidden;
+	overflow: hidden;
 }
 
 .embla__container {
-   display: flex;
-}
-
-.embla__slide {
-   transform: translate3d(0, 0, 0);
-   flex: 0 0 var(--slide-size);
+	display: flex;
 }
