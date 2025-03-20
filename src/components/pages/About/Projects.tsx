@@ -1,10 +1,11 @@
 import React from "react";
-import * as Style from "../../../styles/GlobalStyles";
+import * as Style from "../../../styles/Profile.styled";
+import { Text } from "../../../styles/Global.styled";
 
 const Projects: React.FC = () => (
-	<Style.Container>
-		<Style.H1>Projects</Style.H1>
-	</Style.Container>
+   <Style.Container>
+      <Text size={36}>Projects</Text>
+   </Style.Container>
 );
 
 export default Projects;

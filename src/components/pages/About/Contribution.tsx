@@ -1,10 +1,11 @@
 import React from "react";
-import * as Style from "../../../styles/GlobalStyles";
+import * as Style from "../../../styles/Contribution.styled";
+import { Text } from "../../../styles/Global.styled";
 
 const Contribution: React.FC = () => (
-	<Style.Container>
-		<Style.H1>Contribution</Style.H1>
-	</Style.Container>
+   <Style.Container>
+      <Text size={36}>Contribution</Text>
+   </Style.Container>
 );
 
 export default Contribution;
