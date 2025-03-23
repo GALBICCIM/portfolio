@@ -30,6 +30,7 @@ const StarCanvas: React.FC = () => {
 		}
 	}, []);
 
+	// 반응형으로 구현 요함
 	return <canvas className="canvas" ref={canvasRef} width={1600} height={600} />;
 };
 
