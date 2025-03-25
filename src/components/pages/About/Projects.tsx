@@ -4,7 +4,7 @@ import { Text } from "styles/Global.styled";
 
 const Projects: React.FC = () => (
 	<Style.Container>
-		<Text size={36}>Projects</Text>
+		<Text rem={2}>Projects</Text>
 	</Style.Container>
 );
 

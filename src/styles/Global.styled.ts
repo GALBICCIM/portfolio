@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 interface TextType {
-   size: number;
-   color?: string;
+	rem: number;
+	color?: string;
 }
 
 export const Text = styled.p<TextType>`
-   font-size: ${(props) => props.size}px;
-   color: ${(props) => props.color || "white"};
-   white-space: pre-line;
+	font-size: ${(props) => props.rem}rem;
+	color: ${(props) => props.color || "white"};
+	white-space: pre-line;
 `;
