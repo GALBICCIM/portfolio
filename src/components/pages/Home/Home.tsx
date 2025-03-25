@@ -1,6 +1,6 @@
 import React from "react";
 import StarCanvas from "./StarCanvas";
-import * as Style from "../../../styles/Home.styled";
+import * as Style from "styles/Home.styled";
 
 const Home: React.FC = () => (
 	<Style.Container>

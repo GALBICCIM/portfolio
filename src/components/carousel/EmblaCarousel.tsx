@@ -1,10 +1,11 @@
 import React from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import Home from "../pages/Home/Home";
-import Contribution from "../pages/About/Contribution";
-import Profile from "../pages/About/Profile";
-import Projects from "../pages/About/Projects";
+import { Embla, EmblaViewport, EmblaContainer } from "components/carousel/embla.styled";
+import Home from "components/pages/Home/Home";
+import Contribution from "components/pages/About/Contribution";
+import Profile from "components/pages/About/Profile";
+import Projects from "components/pages/About/Projects";
 
 type PropType = {
 	options?: EmblaOptionsType;
@@ -15,9 +16,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 	const [emblaRef] = useEmblaCarousel(options);
 
 	return (
-		<div className="embla">
-			<div className="embla__viewport" ref={emblaRef}>
-				<div className="embla__container">
+		<Embla>
+			<EmblaViewport ref={emblaRef}>
+				<EmblaContainer>
 					<div className="embla__slide">
 						<Home />
 					</div>
@@ -30,9 +31,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 					<div className="embla__slide">
 						<Projects />
 					</div>
-				</div>
-			</div>
-		</div>
+				</EmblaContainer>
+			</EmblaViewport>
+		</Embla>
 	);
 };
 

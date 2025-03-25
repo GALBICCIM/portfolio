@@ -81,8 +81,6 @@ const StarCanvas: React.FC = () => {
 				star.x = star.dynamicX * canvasWidth;
 				star.y = star.dynamicY * canvasHeight;
 			});
-
-			console.log(canvas.width, canvas.height);
 		};
 
 		resize();
