@@ -3,9 +3,11 @@ import * as Style from "styles/Contribution.styled";
 import { Text } from "styles/Global.styled";
 
 const Contribution: React.FC = () => (
-	<Style.Container>
-		<Text rem={2}>Contribution</Text>
-	</Style.Container>
+   <Style.Container>
+      <Text rem={2} font="NSansRegular">
+         Contribution
+      </Text>
+   </Style.Container>
 );
 
 export default Contribution;
