@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Embla = styled.div`
-	max-width: 100vw;
-	margin: auto;
 	--slide-size: 100%;
 `;
 
