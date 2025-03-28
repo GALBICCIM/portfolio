@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { Embla, EmblaViewport, EmblaContainer } from "components/carousel/embla.styled";
@@ -13,7 +13,19 @@ type PropType = {
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
 	const { options } = props;
-	const [emblaRef] = useEmblaCarousel(options);
+	const [emblaRef, emblaApi] = useEmblaCarousel(options);
+	const [selectedIndex, setSelectedIndex] = useState(0);
+
+	const onSelect = useCallback(() => {
+		if (!emblaApi) return;
+		setSelectedIndex(emblaApi.selectedScrollSnap());
+	}, [emblaApi]);
+
+	useEffect(() => {
+		if (!emblaApi) return;
+		emblaApi.on("select", onSelect);
+		onSelect();
+	}, [emblaApi, onSelect]);
 
 	return (
 		<Embla>

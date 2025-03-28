@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import useRelativeFontSize from "hooks/useRelativeFontSize";
 import StarCanvas from "./StarCanvas";
 import * as Style from "styles/Home.styled";
-import useRelativeFontSize from "hooks/useRelativeFontSize";
 
 const Home: React.FC = () => {
 	const regularSize = useRelativeFontSize(56);
