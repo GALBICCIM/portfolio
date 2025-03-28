@@ -1,27 +1,46 @@
-import React, { useCallback, useEffect, useState } from "react";
-import useEmblaCarousel from "embla-carousel-react";
+import React, { useState, useEffect } from "react";
 import useRelativeFontSize from "hooks/useRelativeFontSize";
 import StarCanvas from "./StarCanvas";
 import * as Style from "styles/Home.styled";
+import { INTRO } from "constants/HomeContent";
 
-const Home: React.FC = () => {
-	const regularSize = useRelativeFontSize(56);
-	const boldSize = useRelativeFontSize(72);
+type HomeProps = {
+   selectedIndex: number;
+};
 
-	return (
-		<Style.Container>
-			<StarCanvas />
-			<Style.TextWrapper>
-				<Style.IntroText rem={regularSize} font="HSansRegular">
-					앞으로 나아가는 발걸음을 멈추지 않는
-				</Style.IntroText>
-				<Style.IntroText rem={boldSize} font="HSansBold">
-					프론트엔드 개발자 지망생, 박승원입니다.
-				</Style.IntroText>
-			</Style.TextWrapper>
-			<Style.Earth />
-		</Style.Container>
-	);
+const Home: React.FC<HomeProps> = ({ selectedIndex }) => {
+   const regularSize = useRelativeFontSize(56);
+   const boldSize = useRelativeFontSize(72);
+   const FONT_LIST = [regularSize, boldSize];
+   const [showEarth, setShowEarth] = useState(true);
+
+   useEffect(() => {
+      if (selectedIndex === 0) {
+         setShowEarth(true);
+      } else {
+         const timer = setTimeout(() => {
+            setShowEarth(false);
+         }, 1000);
+
+         return () => clearTimeout(timer);
+      }
+   }, [selectedIndex]);
+
+   return (
+      <Style.Container>
+         <StarCanvas />
+         <Style.TextWrapper>
+            {INTRO.text.map((item, index) => {
+               return (
+                  <Style.IntroText rem={FONT_LIST[index]} font={INTRO.font[index]}>
+                     {item}
+                  </Style.IntroText>
+               );
+            })}
+         </Style.TextWrapper>
+         {showEarth && <Style.Earth />}
+      </Style.Container>
+   );
 };
 
 export default Home;
