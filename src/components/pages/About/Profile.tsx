@@ -1,7 +1,7 @@
 import React from "react";
 import useRelativeFontSize from "hooks/useRelativeFontSize";
 import * as Style from "styles/Profile.styled";
-import { Title, Text } from "styles/Global.styled";
+import { Title, Text, Card } from "styles/Global.styled";
 import { TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/CardContent";
 
 const Profile: React.FC = () => {
@@ -15,7 +15,7 @@ const Profile: React.FC = () => {
       <Style.Container>
          {TITLE_LIST.map((item, index) => {
             return (
-               <Style.Card key={index}>
+               <Card vw={30} key={index}>
                   <Title rem={titleSize} font="NSansBold">
                      {item}
                   </Title>
@@ -71,7 +71,7 @@ const Profile: React.FC = () => {
                              </div>
                           ))}
                   </Style.TextWrapper>
-               </Style.Card>
+               </Card>
             );
          })}
       </Style.Container>

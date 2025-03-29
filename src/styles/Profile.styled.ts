@@ -17,13 +17,6 @@ export const Container = styled.div`
    gap: 3vw;
 `;
 
-export const Card = styled.div`
-   width: 30vw;
-   height: 85vh;
-   background-color: #e6c7ff;
-   border-radius: 100px;
-`;
-
 export const TextWrapper = styled.div<MarginType>`
    display: flex;
    flex-direction: column;
@@ -45,8 +38,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Lamp = styled.div<LampType>`
-   width: 1vw;
-   height: 2vh;
+   width: min(2.5vw, 2.5vh);
+   height: min(2.5vw, 2.5vh);
    border-radius: 100%;
    background-color: ${(props) => props.color};
    user-select: none;
