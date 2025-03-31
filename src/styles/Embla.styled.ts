@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BtnIconImage from "assets/button-icon.svg";
 
 export const EmblaViewport = styled.div`
 	overflow: hidden;
@@ -22,8 +23,11 @@ export const EmblaButtons = styled.div`
 `;
 
 export const EmblaButton = styled.button`
-	width: min(6.5vw, 6.5vh);
+	width: min(16.5vw, 16.5vh);
 	height: min(6.5vw, 6.5vh);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	cursor: pointer;
 	user-select: none;
 	border: 4px solid #585858;
@@ -35,4 +39,10 @@ export const EmblaButton = styled.button`
 		opacity: 0;
 		cursor: default;
 	}
+`;
+
+export const BtnIcon = styled.img.attrs({ src: BtnIconImage, alt: "Button Icon" })`
+	width: min(3vw, 3vh);
+	height: min(3vw, 3vh);
+	user-select: none;
 `;

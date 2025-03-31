@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import earthImage from "../assets/earth.svg";
+import earthImage from "assets/earth.svg";
 
 interface IntroTextType {
 	rem: number;
