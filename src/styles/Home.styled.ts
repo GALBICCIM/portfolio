@@ -34,6 +34,7 @@ export const TextWrapper = styled.div`
 export const IntroText = styled.p<IntroTextType>`
 	font-size: ${(props) => props.rem}rem;
 	font-family: ${(props) => props.font};
+	user-select: none;
 	color: white;
 	margin: 0;
 `;

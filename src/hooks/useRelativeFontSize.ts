@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useRelativeFontSize = (baseSize: number, baseWidth: number = 1920) => {
+export const useRelativeFontSize = (baseSize: number, baseWidth: number = 1920) => {
 	const [fontSize, setFontSize] = useState(baseSize);
 
 	useEffect(() => {
@@ -20,5 +20,3 @@ const useRelativeFontSize = (baseSize: number, baseWidth: number = 1920) => {
 
 	return fontSize;
 };
-
-export default useRelativeFontSize;
