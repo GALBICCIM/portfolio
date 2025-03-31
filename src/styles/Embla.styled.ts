@@ -34,6 +34,7 @@ export const EmblaButton = styled.button`
 	border-radius: 100px;
 	background-color: #241b32;
 	color: white;
+	opacity: 0.8;
 
 	&:disabled {
 		opacity: 0;
