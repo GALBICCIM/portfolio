@@ -5,8 +5,7 @@ import { EmblaOptionsType } from "embla-carousel";
 import { GlobalFont } from "./fonts/GlobalFont";
 
 const OPTIONS: EmblaOptionsType = {
-	align: "end",
-	containScroll: false
+	dragFree: false
 };
 
 const App: React.FC = () => <EmblaCarousel options={OPTIONS} />;

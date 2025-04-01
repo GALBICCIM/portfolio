@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Canvas = styled.canvas`
 	position: absolute;
-	top: 5%;
 	user-select: none;
 `;
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useRelativeFontSize } from "hooks/useRelativeFontSize";
 import * as Style from "styles/Profile.styled";
 import { Title, Text, Card } from "styles/Global.styled";
-import { TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/CardContent";
+import { TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
 
 const Profile: React.FC = () => {
 	const titleSize = useRelativeFontSize(48);
@@ -19,7 +19,7 @@ const Profile: React.FC = () => {
 						<Title rem={titleSize} font="NSansBold">
 							{item}
 						</Title>
-						<Style.TextWrapper gap={index === 0 ? 2 : index === 1 ? 10 : 3}>
+						<Style.TextWrapper gap={index === 0 ? 2 : index === 1 ? 10 : 1}>
 							{index === 0
 								? INFO_LIST.map((info, infoIndex) => (
 										<div key={infoIndex}>
@@ -62,10 +62,10 @@ const Profile: React.FC = () => {
 											</Text>
 											{tech.value.map((techValueItem) => (
 												<Style.Wrapper>
+													<Style.TechIcon imgPath={require(`assets/icons/${techValueItem.path}`)} />
 													<Text rem={langSize} font="NSansRegular">
 														{techValueItem.text}
 													</Text>
-													<Style.Lamp color={techValueItem.color} />
 												</Style.Wrapper>
 											))}
 										</div>
