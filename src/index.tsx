@@ -5,15 +5,15 @@ import { EmblaOptionsType } from "embla-carousel";
 import { GlobalFont } from "./fonts/GlobalFont";
 
 const OPTIONS: EmblaOptionsType = {
-	dragFree: false
+   watchDrag: false,
 };
 
 const App: React.FC = () => <EmblaCarousel options={OPTIONS} />;
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-	<React.StrictMode>
-		<GlobalFont />
-		<App />
-	</React.StrictMode>
+   <React.StrictMode>
+      <GlobalFont />
+      <App />
+   </React.StrictMode>
 );
