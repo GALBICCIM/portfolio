@@ -9,9 +9,9 @@ type HomeProps = {
 };
 
 const Home: React.FC<HomeProps> = ({ selectedIndex }) => {
-	const regularSize = useRelativeFontSize(56);
-	const boldSize = useRelativeFontSize(72);
-	const SIZE_LIST = [regularSize, boldSize];
+	const regularFontSize = useRelativeFontSize(56);
+	const boldFontSize = useRelativeFontSize(72);
+	const SIZE_LIST = [regularFontSize, boldFontSize];
 	const [showEarth, setShowEarth] = useState(true);
 
 	useEffect(() => {
