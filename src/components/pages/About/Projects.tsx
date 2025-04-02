@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { useRelativeFontSize } from "hooks/useRelativeFontSize";
 import * as Style from "styles/Projects.styled";
 import { Text, Title, Card } from "styles/Global.styled";
