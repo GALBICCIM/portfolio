@@ -35,9 +35,11 @@ const ProjectModal: React.FC<ModalProps> = ({ isOpen, onClose, project }) => {
                <Style.Hr />
                <Style.TextWrapper>
                   {project.description.map((item, index) => (
-                     <Text rem={descFontSize} font="NSansRegular" key={index}>
-                        {item}
-                     </Text>
+                     <Style.Li>
+                        <Text rem={descFontSize} font="NSansRegular" key={index} style={{ wordBreak: "break-all" }}>
+                           - {item}
+                        </Text>
+                     </Style.Li>
                   ))}
                </Style.TextWrapper>
             </Style.ModalContent>

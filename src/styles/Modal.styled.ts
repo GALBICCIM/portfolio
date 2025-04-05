@@ -47,11 +47,17 @@ export const Header = styled.header`
    justify-content: center;
 `;
 
-export const TextWrapper = styled.div``;
+export const TextWrapper = styled.ul`
+   padding: 0;
+`;
+
+export const Li = styled.li`
+   list-style: none;
+`;
 
 export const CloseButton = styled.button`
-   width: min(5vw, 5vh);
-   height: min(5vw, 5vh);
+   width: min(3vw, 3vh);
+   height: min(3vw, 3vh);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -59,7 +65,8 @@ export const CloseButton = styled.button`
    background-color: transparent;
    border: none;
    border-radius: 100px;
-   transition: all 0.5s ease;
+   transform-origin: center center;
+   transition: all 0.2s ease;
    cursor: pointer;
    position: relative;
    right: -30%;
@@ -70,10 +77,11 @@ export const CloseButton = styled.button`
 `;
 
 export const CloseBtnIcon = styled.img.attrs({ src: CloseImage, alt: "Close Icon" })`
-   width: min(3vw, 3vh);
-   height: min(3vw, 3vh);
+   width: 100%;
+   height: 100%;
    opacity: 0.7;
    user-select: none;
+   position: absolute;
 
    &:hover {
       opacity: 1;

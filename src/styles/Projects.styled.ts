@@ -45,7 +45,7 @@ export const HereIcon = styled.img.attrs({ src: ArrowImage, alt: "Arrow Icon" })
    width: min(3vw, 3vh);
    height: min(3vw, 3vh);
    position: relative;
-   left: 10%;
+   left: 5%;
    animation: ${swing} ease-in-out 1s infinite;
    user-select: none;
 `;
