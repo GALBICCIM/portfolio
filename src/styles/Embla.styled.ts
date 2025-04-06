@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import ArrowImage from "assets/arrow.svg";
+import { deepPurple } from "constants/Colors";
+
+export const Embla = styled.div`
+   background-color: ${deepPurple};
+`;
 
 export const EmblaViewport = styled.div`
    overflow: hidden;
@@ -32,10 +37,10 @@ export const EmblaButton = styled.button`
    cursor: pointer;
    user-select: none;
    border: 3px solid #c3c3c3;
-   border-radius: 100px;
+   border-radius: 50px;
    background-color: white;
    box-shadow: inset 0 0 7px;
-   transition: all 0.5s ease;
+   transition: all 0.5s ease-in-out;
 
    &:hover {
       opacity: 1;

@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { lightPurple } from "constants/Colors";
 import CloseImage from "assets/close.svg";
 
 const fadeIn = keyframes`
@@ -28,7 +29,7 @@ export const ModalContent = styled.div`
    width: 70vw;
    height: 65vh;
    padding: 0 2vw;
-   background-color: #e6c7ff;
+   background-color: ${lightPurple};
    position: absolute;
    top: 60%;
    left: 50%;

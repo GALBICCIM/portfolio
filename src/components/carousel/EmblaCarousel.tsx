@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { usePrevNextButtons } from "hooks/usePrevNextButtons";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import { EmblaViewport, EmblaContainer, EmblaSlide, EmblaButtons } from "styles/Embla.styled";
+import { Embla, EmblaViewport, EmblaContainer, EmblaSlide, EmblaButtons } from "styles/Embla.styled";
 import { PrevButton, NextButton } from "./EmblaButtons";
 import Home from "pages/Home/Home";
 import Contribution from "pages/About/Contribution";
@@ -31,7 +31,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
    }, [emblaApi, onSelect]);
 
    return (
-      <div>
+      <Embla>
          <EmblaViewport ref={emblaRef}>
             <EmblaContainer>
                <EmblaSlide className="embla__slide">
@@ -52,7 +52,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
             <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
          </EmblaButtons>
-      </div>
+      </Embla>
    );
 };
 
