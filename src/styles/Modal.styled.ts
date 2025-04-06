@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { lightPurple } from "constants/Colors";
+import GithubImage from "assets/icons/github.svg";
 import CloseImage from "assets/close.svg";
 
 const fadeIn = keyframes`
@@ -57,8 +58,8 @@ export const Li = styled.li`
 `;
 
 export const CloseButton = styled.button`
-   width: min(3vw, 3vh);
-   height: min(3vw, 3vh);
+   width: min(3.5vw, 3.5vh);
+   height: min(3.5vw, 3.5vh);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -70,7 +71,7 @@ export const CloseButton = styled.button`
    transition: all 0.2s ease;
    cursor: pointer;
    position: relative;
-   right: -30%;
+   left: 28%;
 
    &:hover {
       transform: scale(1.1);
@@ -95,4 +96,26 @@ export const Hr = styled.hr`
    margin-bottom: 5vh;
    background-color: black;
    border: none;
+`;
+
+export const A = styled.a`
+   text-decoration: none;
+   width: min(5vw, 5vh);
+   height: min(5vw, 5vh);
+   transform-origin: center center;
+   transition: all 0.2s ease;
+   cursor: pointer;
+   position: relative;
+   right: 4%;
+
+   &:hover {
+      transform: scale(1.1);
+   }
+`;
+
+export const GithubIcon = styled.img.attrs({ src: GithubImage, alt: "Github" })`
+   width: 100%;
+   height: 100%;
+   user-select: none;
+   position: absolute;
 `;

@@ -8,6 +8,7 @@ import ProjectModal from "components/modal/ProjectModal";
 interface ProjectType {
    label: string;
    content: string;
+   link: string;
    description: string[];
 }
 

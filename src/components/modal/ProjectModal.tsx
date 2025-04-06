@@ -12,6 +12,7 @@ interface ModalProps {
    project: {
       label: string;
       content: string;
+      link: string;
       description: string[];
    } | null;
 }
@@ -25,6 +26,9 @@ const ProjectModal: React.FC<ModalProps> = ({ isOpen, onClose, project }) => {
          {project && (
             <Style.ModalContent>
                <Style.Header>
+                  <Style.A href={`https://github.com/GALBICCIM/${project.link}`} target="_blank">
+                     <Style.GithubIcon />
+                  </Style.A>
                   <Title rem={titleFontSize} font="NSansBold">
                      {project.label}
                   </Title>
