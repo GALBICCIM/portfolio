@@ -14,38 +14,40 @@ const swing = keyframes`
 `;
 
 export const Container = styled.div`
-   width: 100vw;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 `;
 
 export const Wrapper = styled.div`
-   display: grid;
-   justify-content: center;
-   grid-template-columns: repeat(2, 31.25vw);
-   column-gap: 18vw;
-   row-gap: 12vh;
-   margin-top: 10vh;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(2, 31.25vw);
+	column-gap: 18vw;
+	row-gap: 12vh;
+	margin-top: 10vh;
 `;
 
 export const TitleButton = styled.button`
-   background-color: transparent;
-   border: none;
-   transition: all 0.3s ease;
-   cursor: pointer;
+	background-color: transparent;
+	border: none;
+	transition: transform 0.3s ease;
+	will-change: transform;
+	backface-visibility: hidden;
+	cursor: pointer;
 
-   &:hover {
-      transform: scale(1.05);
-   }
+	&:hover {
+		transform: scale(1.05);
+	}
 `;
 
 export const HereIcon = styled.img.attrs({ src: ArrowImage, alt: "Arrow Icon" })`
-   width: min(3vw, 3vh);
-   height: min(3vw, 3vh);
-   position: relative;
-   left: 5%;
-   animation: ${swing} ease-in-out 1s infinite;
-   user-select: none;
+	width: min(3vw, 3vh);
+	height: min(3vw, 3vh);
+	position: relative;
+	left: 5%;
+	animation: ${swing} ease-in-out 1s infinite;
+	user-select: none;
 `;
