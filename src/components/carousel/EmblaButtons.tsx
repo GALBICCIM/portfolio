@@ -25,7 +25,7 @@ export const NextButton: React.FC<PropType> = (props) => {
 	const btnTextSize = useRelativeFontSize(24);
 
 	return (
-		<EmblaButton className="embla__button embla__button--next" {...restProps}>
+		<EmblaButton className="embla__button--next" {...restProps}>
 			<Text rem={btnTextSize} font="NSansBold">
 				Next
 			</Text>
