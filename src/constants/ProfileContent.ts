@@ -1,3 +1,5 @@
+export const GAP_LIST = [2, 8, 1];
+
 export const TITLE_LIST = ["인적 사항", "자격증 취득 내역", "기술 스택"];
 
 export const INFO_LIST = [

@@ -2,7 +2,7 @@ import React from "react";
 import { useRelativeFontSize } from "hooks/useRelativeFontSize";
 import * as Style from "styles/Profile.styled";
 import { Title, Text, Card } from "styles/Global.styled";
-import { TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
+import { GAP_LIST, TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
 
 const Profile: React.FC = () => {
 	const titleFontSize = useRelativeFontSize(48);
@@ -18,7 +18,7 @@ const Profile: React.FC = () => {
 						<Title rem={titleFontSize} font="NSansBold">
 							{item}
 						</Title>
-						<Style.TextWrapper gap={index === 0 ? 2 : index === 1 ? 8 : 1}>
+						<Style.TextWrapper gap={GAP_LIST[index]}>
 							{index === 0
 								? INFO_LIST.map((info, infoIndex) => (
 										<div key={infoIndex}>
