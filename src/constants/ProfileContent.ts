@@ -14,6 +14,7 @@ export const INFO_LIST = [
 ];
 
 export const CERT_LIST = [
+	{ label: "- AWS Cloud Practitioner", date: "(2025. 4. 21.)" },
 	{ label: "- 정보처리기능사", date: "(2024. 4. 17.)" },
 	{ label: "- ITQ OA Master", date: "(2023. 11. 9.)" },
 	{ label: "- GTQ 포토샵 1급", date: "(2023. 9. 15.)" },

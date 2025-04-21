@@ -18,7 +18,7 @@ const Profile: React.FC = () => {
 						<Title rem={titleFontSize} font="NSansBold">
 							{item}
 						</Title>
-						<Style.TextWrapper gap={index === 0 ? 2 : index === 1 ? 10 : 1}>
+						<Style.TextWrapper gap={index === 0 ? 2 : index === 1 ? 8 : 1}>
 							{index === 0
 								? INFO_LIST.map((info, infoIndex) => (
 										<div key={infoIndex}>
