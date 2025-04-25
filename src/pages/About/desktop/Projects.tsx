@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import { useRelativeFontSize } from "hooks/useRelativeFontSize";
-import * as Style from "styles/Projects.styled";
-import { Text, Title, Card } from "styles/Global.styled";
-import { PROJECT_LIST } from "constants/ProjectContent";
+
+import { useRelativeFontSize } from "hooks";
+
 import ProjectModal from "components/modal/ProjectModal";
+
+import * as Style from "styles/desktop/Projects.styled";
+import { Text, Title, Card } from "styles/Global.styled";
+
+import { PROJECT_LIST } from "constants/ProjectContent";
 
 interface ProjectType {
 	label: string;
@@ -39,7 +43,12 @@ const Projects: React.FC = () => {
 						<div key={index}>
 							<div>
 								<Style.TitleButton>
-									<Text rem={titleFontSize} font="NSansBold" style={{ transform: "translateZ(0)", WebkitFontSmoothing: "antialiased" }} onClick={() => openModal(item)}>
+									<Text
+										rem={titleFontSize}
+										font="NSansBold"
+										style={{ transform: "translateZ(0)", WebkitFontSmoothing: "antialiased" }}
+										onClick={() => openModal(item)}
+									>
 										{item.label}
 									</Text>
 								</Style.TitleButton>

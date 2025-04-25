@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+
 import ArrowImage from "assets/arrow.svg";
 
 const swing = keyframes`

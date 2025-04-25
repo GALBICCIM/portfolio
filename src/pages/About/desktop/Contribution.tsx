@@ -1,7 +1,10 @@
 import React from "react";
-import { useRelativeFontSize } from "hooks/useRelativeFontSize";
-import * as Style from "styles/Contribution.styled";
+
+import { useRelativeFontSize } from "hooks";
+
+import * as Style from "styles/desktop/Contribution.styled";
 import { Text, Title, Card } from "styles/Global.styled";
+
 import { CONTRIBUTION_OBJ } from "constants/ContributionContent";
 
 const Contribution: React.FC = () => {

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+
 import styled from "styled-components";
 
 const Canvas = styled.canvas`
@@ -49,7 +50,7 @@ const StarCanvas: React.FC = () => {
 					radius,
 					speed,
 					dynamicX: x / canvasWidth,
-					dynamicY: y / canvasHeight
+					dynamicY: y / canvasHeight,
 				});
 			}
 		};

@@ -1,7 +1,9 @@
 import React, { ComponentPropsWithRef } from "react";
+
+import { useRelativeFontSize } from "hooks/useRelativeFontSize";
+
 import { Text } from "styles/Global.styled";
 import { EmblaButton, BtnArrow } from "styles/Embla.styled";
-import { useRelativeFontSize } from "hooks/useRelativeFontSize";
 
 type PropType = ComponentPropsWithRef<"button">;
 

@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+
 import { lightPurple } from "constants/Colors";
 import GithubImage from "assets/icons/github.svg";
 import CloseImage from "assets/close.svg";

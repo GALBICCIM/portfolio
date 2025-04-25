@@ -1,7 +1,10 @@
 import React from "react";
+
 import { useRelativeFontSize } from "hooks/useRelativeFontSize";
-import * as Style from "styles/Profile.styled";
+
+import * as Style from "styles/desktop/Profile.styled";
 import { Title, Text, Card } from "styles/Global.styled";
+
 import { GAP_LIST, TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
 
 const Profile: React.FC = () => {

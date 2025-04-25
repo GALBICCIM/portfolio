@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+
 import HappinessSansBold from "./HappinessSansBold.ttf";
 import HappinessSansRegular from "./HappinessSansRegular.ttf";
 import NotoSansKRBold from "./NotoSansKRBold.ttf";

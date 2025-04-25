@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+
 import { deepPurple } from "constants/Colors";
 import earthImage from "assets/earth.svg";
 

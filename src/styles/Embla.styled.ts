@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import ArrowImage from "assets/arrow.svg";
+
 import { deepPurple } from "constants/Colors";
+import ArrowImage from "assets/arrow.svg";
 
 export const Embla = styled.div`
 	background-color: ${deepPurple};
@@ -15,6 +16,8 @@ export const EmblaContainer = styled.div`
 `;
 
 export const EmblaSlide = styled.div`
+	flex: 0 0 100%;
+	min-width: 100%;
 	transform: translate3d(0, 0, 0);
 `;
 
