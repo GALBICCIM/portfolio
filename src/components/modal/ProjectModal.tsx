@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import { useRelativeFontSize } from "hooks";
 
 import * as Style from "styles/desktop/Modal.styled";
-import { Text, Title } from "styles/Global.styled";
+import { Text, Title } from "styles/desktop/Global.styled";
 
 Modal.setAppElement("#root");
 

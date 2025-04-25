@@ -1,14 +1,16 @@
 import React, { ComponentPropsWithRef } from "react";
 
+import { EmblaDot } from "styles/Embla.styled";
+
 type PropType = ComponentPropsWithRef<"button">;
 
 const DotButton: React.FC<PropType> = (props) => {
 	const { children, ...restProps } = props;
 
 	return (
-		<button type="button" {...restProps}>
+		<EmblaDot type="button" {...restProps}>
 			{children}
-		</button>
+		</EmblaDot>
 	);
 };
 

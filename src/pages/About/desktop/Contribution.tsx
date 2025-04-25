@@ -3,7 +3,7 @@ import React from "react";
 import { useRelativeFontSize } from "hooks";
 
 import * as Style from "styles/desktop/Contribution.styled";
-import { Text, Title, Card } from "styles/Global.styled";
+import { Text, Title, Card } from "styles/desktop/Global.styled";
 
 import { CONTRIBUTION_OBJ } from "constants/ContributionContent";
 

@@ -5,7 +5,7 @@ import { useRelativeFontSize } from "hooks";
 import ProjectModal from "components/modal/ProjectModal";
 
 import * as Style from "styles/desktop/Projects.styled";
-import { Text, Title, Card } from "styles/Global.styled";
+import { Text, Title, Card } from "styles/desktop/Global.styled";
 
 import { PROJECT_LIST } from "constants/ProjectContent";
 

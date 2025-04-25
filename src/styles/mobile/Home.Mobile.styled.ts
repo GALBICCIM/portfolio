@@ -19,18 +19,23 @@ const rotaion = keyframes`
 
 export const Container = styled.div`
 	width: 100vw;
-	height: 100vh;
+	height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 `;
 
 export const TextWrapper = styled.div`
 	background-color: ${deepPurple};
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5vh;
+	text-align: left;
 	position: absolute;
-	top: 22%;
+	top: 15%;
+	left: 10px;
 `;
 
 export const IntroText = styled.p<IntroTextType>`
@@ -44,9 +49,9 @@ export const IntroText = styled.p<IntroTextType>`
 export const Earth = styled.img.attrs({ src: earthImage, alt: "Earth Image" })`
 	width: 150%;
 	height: 150%;
-	position: relative;
-	top: 35%;
-	right: 25%;
+	position: absolute;
+	top: 20%;
+	right: 5%;
 	animation: ${rotaion} infinite 30s linear;
 	user-select: none;
 `;

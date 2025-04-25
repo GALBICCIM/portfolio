@@ -1,4 +1,5 @@
 export const GAP_LIST = [2, 8, 1];
+export const GAP_LIST_MOBILE = [3, 7, 2];
 
 export const TITLE_LIST = ["인적 사항", "자격증 취득 내역", "기술 스택"];
 
@@ -9,8 +10,8 @@ export const INFO_LIST = [
 	{
 		label: "학력 사항",
 		value: [
-			{ text: "- 세일중학교 졸업", date: "(2020. 3. 2.~2023. 2. 3.)" },
-			{ text: "- 한세사이버보안고등학교 재학 중", date: "(2023. 3. 2.)" },
+			{ text: "- 세일중학교", date: "(2020. 3. 2.~2023. 2. 3.)" },
+			{ text: "- 한세사이버보안고등학교", date: "(2023. 3. 2.~)" },
 		],
 	},
 ];

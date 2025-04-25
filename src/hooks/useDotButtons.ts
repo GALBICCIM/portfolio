@@ -32,7 +32,7 @@ export const useDotButton = (emblaApi: EmblaCarouselType | undefined): UseDotBut
 
 		onInit(emblaApi);
 		onSelect(emblaApi);
-
+      
 		emblaApi.on("reInit", onInit).on("reInit", onSelect).on("select", onSelect);
 	}, [emblaApi, onInit, onSelect]);
 

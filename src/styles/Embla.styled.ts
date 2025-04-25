@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
-import { deepPurple } from "constants/Colors";
+import { deepPurple, lightPurple } from "constants/Colors";
 import ArrowImage from "assets/arrow.svg";
 
 export const Embla = styled.div`
+	height: 100dvh;
 	background-color: ${deepPurple};
 `;
 
 export const EmblaViewport = styled.div`
+	height: 100%;
 	overflow: hidden;
 `;
 
 export const EmblaContainer = styled.div`
+	height: 100%;
 	display: flex;
 `;
 
@@ -51,6 +54,28 @@ export const EmblaButton = styled.button`
 	&:disabled {
 		opacity: 0;
 		cursor: default;
+	}
+`;
+
+export const EmblaDots = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+	top: 4%;
+	z-index: 1;
+`;
+
+export const EmblaDot = styled.button`
+	background-color: ${deepPurple};
+	text-decoration: none;
+	border: 3px solid ${lightPurple};
+	border-radius: 50%;
+	padding: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+
+	&.embla__dot--selected {
+		background-color: ${lightPurple};
 	}
 `;
 

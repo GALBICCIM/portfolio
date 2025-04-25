@@ -2,28 +2,23 @@ import React from "react";
 
 import DotButton from "components/carousel/EmblaDotButtons";
 
-import { useRelativeFontSize, useDotButton } from "hooks";
+import { useDotButton } from "hooks";
 
 import useEmblaCarousel from "embla-carousel-react";
 
 import * as Style from "styles/mobile/Profile.Mobile.styled";
-import { Embla, EmblaViewport, EmblaContainer, EmblaSlide } from "styles/Embla.styled";
-import { Title, Text, Card } from "styles/Global.styled";
+import { Embla, EmblaViewport, EmblaContainer, EmblaSlide, EmblaDots } from "styles/Embla.styled";
+import { Title, Text, Card } from "styles/mobile/Global.Mobile.styled";
 
-import { GAP_LIST, TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
+import { GAP_LIST_MOBILE, TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
 
 const ProfileMobile: React.FC = () => {
 	const [emblaRef, emblaApi] = useEmblaCarousel();
-	const titleFontSize = useRelativeFontSize(160);
-	const labelFontSize = useRelativeFontSize(130);
-	const contentFontSize = useRelativeFontSize(110);
-	const smallContentFontSize = useRelativeFontSize(80);
-
 	const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
 	return (
 		<Embla>
-			<div className="embla__dots">
+			<EmblaDots>
 				{scrollSnaps.map((_, index) => (
 					<DotButton
 						key={index}
@@ -31,36 +26,36 @@ const ProfileMobile: React.FC = () => {
 						className={"embla__dot".concat(index === selectedIndex ? " embla__dot--selected" : "")}
 					/>
 				))}
-			</div>
+			</EmblaDots>
 			<EmblaViewport ref={emblaRef}>
 				<EmblaContainer>
 					{TITLE_LIST.map((item, index) => (
 						<EmblaSlide className="embla__slide" key={index}>
 							<Style.Container>
 								<Card vw={90}>
-									<Title rem={titleFontSize} font="NSansBold">
+									<Title em={2} font="NSansBold">
 										{item}
 									</Title>
-									<Style.TextWrapper gap={GAP_LIST[index]}>
+									<Style.TextWrapper gap={GAP_LIST_MOBILE[index]}>
 										{index === 0
 											? INFO_LIST.map((info, infoIndex) => (
 													<div key={infoIndex}>
-														<Text rem={labelFontSize} font="NSansBold">
+														<Text em={1.3} font="NSansBold">
 															{info.label}
 														</Text>
 														{Array.isArray(info.value) ? (
 															info.value.map((infoValueItem) => (
 																<div>
-																	<Text rem={contentFontSize} font="NSansRegular">
+																	<Text em={1.2} font="NSansRegular">
 																		{infoValueItem.text}
 																	</Text>
-																	<Text rem={smallContentFontSize} font="NSansRegular" style={{ marginLeft: "12px" }}>
+																	<Text em={1} font="NSansRegular" style={{ marginLeft: "12px" }}>
 																		{infoValueItem.date}
 																	</Text>
 																</div>
 															))
 														) : (
-															<Text rem={contentFontSize} font="NSansRegular">
+															<Text em={1.2} font="NSansRegular">
 																{info.value}
 															</Text>
 														)}
@@ -69,23 +64,23 @@ const ProfileMobile: React.FC = () => {
 											: index === 1
 											? CERT_LIST.map((cert, certIndex) => (
 													<div key={certIndex}>
-														<Text rem={labelFontSize} font="NSansBold">
+														<Text em={1.3} font="NSansBold">
 															{cert.label}
 														</Text>
-														<Text rem={smallContentFontSize} font="NSansRegular" style={{ marginLeft: "16px" }}>
+														<Text em={1} font="NSansRegular" style={{ marginLeft: "16px" }}>
 															{cert.date}
 														</Text>
 													</div>
 											  ))
 											: TECH_LIST.map((tech, techIndex) => (
 													<div key={techIndex}>
-														<Text rem={labelFontSize} font="NSansBold">
+														<Text em={1.3} font="NSansBold">
 															{tech.label}
 														</Text>
 														{tech.value.map((techValueItem) => (
 															<Style.Wrapper>
 																<Style.TechIcon imgPath={require(`assets/icons/${techValueItem.path}`)} />
-																<Text rem={smallContentFontSize} font="NSansRegular">
+																<Text em={0.8} font="NSansRegular">
 																	{techValueItem.text}
 																</Text>
 															</Style.Wrapper>
