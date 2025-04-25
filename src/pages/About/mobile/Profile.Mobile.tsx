@@ -1,24 +1,37 @@
 import React from "react";
 
-import { useRelativeFontSize } from "hooks/useRelativeFontSize";
+import DotButton from "components/carousel/EmblaDotButtons";
 
-import { Embla, EmblaViewport, EmblaContainer, EmblaSlide } from "styles/Embla.styled";
+import { useRelativeFontSize, useDotButton } from "hooks";
+
 import useEmblaCarousel from "embla-carousel-react";
 
 import * as Style from "styles/mobile/Profile.Mobile.styled";
+import { Embla, EmblaViewport, EmblaContainer, EmblaSlide } from "styles/Embla.styled";
 import { Title, Text, Card } from "styles/Global.styled";
 
 import { GAP_LIST, TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";
 
 const ProfileMobile: React.FC = () => {
-	const [emblaRef] = useEmblaCarousel();
+	const [emblaRef, emblaApi] = useEmblaCarousel();
 	const titleFontSize = useRelativeFontSize(160);
 	const labelFontSize = useRelativeFontSize(130);
 	const contentFontSize = useRelativeFontSize(110);
 	const smallContentFontSize = useRelativeFontSize(80);
 
+	const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
+
 	return (
 		<Embla>
+			<div className="embla__dots">
+				{scrollSnaps.map((_, index) => (
+					<DotButton
+						key={index}
+						onClick={() => onDotButtonClick(index)}
+						className={"embla__dot".concat(index === selectedIndex ? " embla__dot--selected" : "")}
+					/>
+				))}
+			</div>
 			<EmblaViewport ref={emblaRef}>
 				<EmblaContainer>
 					{TITLE_LIST.map((item, index) => (
