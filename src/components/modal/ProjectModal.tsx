@@ -15,6 +15,7 @@ interface ModalProps {
 		label: string;
 		content: string;
 		link: string;
+		tag: string;
 		description: string[];
 	} | null;
 }
@@ -31,13 +32,16 @@ const ProjectModal: React.FC<ModalProps> = ({ isOpen, onClose, project }) => {
 						<Style.A href={`https://github.com/GALBICCIM/${project.link}`} target="_blank">
 							<Style.GithubIcon />
 						</Style.A>
-						<Title rem={titleFontSize} font="NSansBold">
+						<Title rem={titleFontSize} font="NSansBold" style={{ margin: "3vh 0" }}>
 							{project.label}
 						</Title>
 						<Style.CloseButton onClick={onClose}>
 							<Style.CloseBtnIcon />
 						</Style.CloseButton>
 					</Style.Header>
+					<Text color="gray" font="NSansRegular">
+						{project.tag}
+					</Text>
 					<Style.Hr />
 					<Style.TextWrapper>
 						{project.description.map((item, index) => (

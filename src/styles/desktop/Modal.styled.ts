@@ -19,12 +19,12 @@ export const ModalStyle: ReactModal.Styles = {
 	overlay: {
 		width: "100vw",
 		height: "100vh",
-		backgroundColor: "rgba(0, 0, 0, 0.6)"
+		backgroundColor: "rgba(0, 0, 0, 0.6)",
 	},
 	content: {
 		border: "none",
-		background: "none"
-	}
+		background: "none",
+	},
 };
 
 export const ModalContent = styled.div`
