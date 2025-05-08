@@ -13,7 +13,7 @@ const ContributionMobile: React.FC = () => {
 
 	return (
 		<Style.Container>
-			<Card vw={90}>
+			<Card vw={90} style={{ top: "10.2%", position: "absolute" }}>
 				<Title em={1.3} font="NSansBold">
 					저는 학교에 이러한 기여를 했어요.
 				</Title>
