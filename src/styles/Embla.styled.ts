@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-import { deepPurple, lightPurple } from "constants/Colors";
+import { deepGrayColor, whiteColor } from "constants/Colors";
 import ArrowImage from "assets/arrow.svg";
 
 export const Embla = styled.div`
 	height: 100dvh;
-	background-color: ${deepPurple};
+	background-color: ${deepGrayColor};
 `;
 
 export const EmblaViewport = styled.div`
@@ -71,16 +71,16 @@ export const EmblaDots = styled.div`
 `;
 
 export const EmblaDot = styled.button`
-	background-color: ${deepPurple};
+	background-color: ${deepGrayColor};
 	text-decoration: none;
-	border: 3px solid ${lightPurple};
+	border: 3px solid ${whiteColor};
 	border-radius: 50%;
 	padding: 0;
 	width: 1.5rem;
 	height: 1.5rem;
 
 	&.embla__dot--selected {
-		background-color: ${lightPurple};
+		background-color: ${whiteColor};
 	}
 `;
 

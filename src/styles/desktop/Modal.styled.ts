@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { lightPurple } from "constants/Colors";
+import { whiteColor } from "constants/Colors";
 import GithubImage from "assets/icons/github.svg";
 import CloseImage from "assets/close.svg";
 
@@ -31,7 +31,7 @@ export const ModalContent = styled.div`
 	width: 70vw;
 	height: 65vh;
 	padding: 0 2vw;
-	background-color: ${lightPurple};
+	background-color: ${whiteColor};
 	position: absolute;
 	top: 60%;
 	left: 50%;

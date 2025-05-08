@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { lightPurple } from "constants/Colors";
+import { whiteColor } from "constants/Colors";
 
 interface GlobalType {
 	rem?: number;
@@ -31,6 +31,6 @@ export const Title = styled.p<GlobalType>`
 export const Card = styled.div<GlobalType>`
 	width: ${(props) => props.vw}vw;
 	height: 85vh;
-	background-color: ${lightPurple};
+	background-color: ${whiteColor};
 	border-radius: 30px;
 `;

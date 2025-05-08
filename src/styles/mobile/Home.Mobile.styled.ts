@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { deepPurple } from "constants/Colors";
+import { deepGrayColor } from "constants/Colors";
 import earthImage from "assets/earth.svg";
 
 interface IntroTextType {
@@ -28,7 +28,7 @@ export const Container = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-	background-color: ${deepPurple};
+	background-color: ${deepGrayColor};
 	display: flex;
 	flex-direction: column;
 	gap: 1.5vh;

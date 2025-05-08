@@ -8,7 +8,7 @@ import { EmblaOptionsType } from "embla-carousel";
 import { Embla, EmblaViewport, EmblaContainer, EmblaSlide, EmblaButtons } from "styles/Embla.styled";
 import { DesktopPrevButton, DesktopNextButton, MobilePrevButton, MobileNextButton } from "./EmblaButtons";
 import { Home, HomeMobile } from "pages/Home";
-import { Profile, ProfileMobile, Contribution, ContributionMobile, Projects, ProjectsMobile } from "pages/About";
+import { Profile, ProfileMobile, Projects, ProjectsMobile } from "pages/About";
 
 type PropType = {
 	options: EmblaOptionsType;
@@ -36,15 +36,24 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 		<Embla>
 			<EmblaViewport ref={emblaRef}>
 				<EmblaContainer>
-					<EmblaSlide className="embla__slide">{isMobile ? <HomeMobile selectedIndex={selectedIndex} /> : <Home selectedIndex={selectedIndex} />}</EmblaSlide>
+					<EmblaSlide className="embla__slide">
+						{isMobile ? <HomeMobile selectedIndex={selectedIndex} /> : <Home selectedIndex={selectedIndex} />}
+					</EmblaSlide>
 					<EmblaSlide className="embla__slide">{isMobile ? <ProfileMobile /> : <Profile />}</EmblaSlide>
-					{/* <EmblaSlide className="embla__slide">{isMobile ? <ContributionMobile /> : <Contribution />}</EmblaSlide> */}
 					<EmblaSlide className="embla__slide">{isMobile ? <ProjectsMobile /> : <Projects />}</EmblaSlide>
 				</EmblaContainer>
 			</EmblaViewport>
 			<EmblaButtons>
-				{isMobile ? <MobilePrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} /> : <DesktopPrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />}
-				{isMobile ? <MobileNextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} /> : <DesktopNextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />}
+				{isMobile ? (
+					<MobilePrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+				) : (
+					<DesktopPrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+				)}
+				{isMobile ? (
+					<MobileNextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+				) : (
+					<DesktopNextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+				)}
 			</EmblaButtons>
 		</Embla>
 	);

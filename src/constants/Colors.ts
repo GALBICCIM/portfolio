@@ -1,2 +1,2 @@
-export const lightPurple = "#e6c7ff";
-export const deepPurple = "#241b32";
+export const whiteColor = "#ffffff";
+export const deepGrayColor = "#202020";
