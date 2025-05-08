@@ -48,6 +48,7 @@ export const IntroText = styled.p<IntroTextType>`
 
 export const Earth = styled.img.attrs({ src: earthImage, alt: "Earth Image" })`
 	width: 150%;
+	max-width: 800px;
 	height: 150%;
 	position: absolute;
 	top: 20%;

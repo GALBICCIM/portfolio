@@ -44,6 +44,7 @@ export const EmblaButton = styled.button`
 	user-select: none;
 	border: 3px solid #c3c3c3;
 	border-radius: 20px;
+	outline: none;
 	background-color: white;
 	box-shadow: inset 0 0 7px;
 	transition: all 0.5s ease-in-out;
@@ -54,6 +55,10 @@ export const EmblaButton = styled.button`
 	&:disabled {
 		opacity: 0;
 		cursor: default;
+	}
+	@media (max-width: 768px) {
+		width: min(60px, 60px);
+		height: min(40px, 40px);
 	}
 `;
 
@@ -83,4 +88,9 @@ export const BtnArrow = styled.img.attrs({ src: ArrowImage, alt: "Arrow Icon" })
 	width: min(3vw, 3vh);
 	height: min(3vw, 3vh);
 	user-select: none;
+
+	@media (max-width: 768px) {
+		width: min(20px, 20px);
+		height: min(20px, 20px);
+	}
 `;

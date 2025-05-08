@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import StarCanvas from "components/StarCanvas";
-
 import * as Style from "styles/mobile/Home.Mobile.styled";
 
 import { INTRO_MOBILE } from "constants/HomeContent";

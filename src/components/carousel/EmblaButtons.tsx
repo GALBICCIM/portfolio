@@ -7,7 +7,7 @@ import { EmblaButton, BtnArrow } from "styles/Embla.styled";
 
 type PropType = ComponentPropsWithRef<"button">;
 
-export const PrevButton: React.FC<PropType> = (props) => {
+export const DesktopPrevButton: React.FC<PropType> = (props) => {
 	const { children, ...restProps } = props;
 	const btnTextSize = useRelativeFontSize(24);
 
@@ -22,7 +22,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
 	);
 };
 
-export const NextButton: React.FC<PropType> = (props) => {
+export const DesktopNextButton: React.FC<PropType> = (props) => {
 	const { children, ...restProps } = props;
 	const btnTextSize = useRelativeFontSize(24);
 
@@ -31,6 +31,28 @@ export const NextButton: React.FC<PropType> = (props) => {
 			<Text rem={btnTextSize} font="NSansBold">
 				Next
 			</Text>
+			<BtnArrow />
+			{children}
+		</EmblaButton>
+	);
+};
+
+export const MobilePrevButton: React.FC<PropType> = (props) => {
+	const { children, ...restProps } = props;
+
+	return (
+		<EmblaButton className="embla__button--prev" {...restProps}>
+			<BtnArrow style={{ transform: "scaleX(-1)" }} />
+			{children}
+		</EmblaButton>
+	);
+};
+
+export const MobileNextButton: React.FC<PropType> = (props) => {
+	const { children, ...restProps } = props;
+
+	return (
+		<EmblaButton className="embla__button--next" {...restProps}>
 			<BtnArrow />
 			{children}
 		</EmblaButton>

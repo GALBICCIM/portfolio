@@ -1,13 +1,11 @@
 import React from "react";
 
-import DotButton from "components/carousel/EmblaDotButtons";
-
 import { useDotButton } from "hooks";
-
 import useEmblaCarousel from "embla-carousel-react";
 
 import * as Style from "styles/mobile/Profile.Mobile.styled";
 import { Embla, EmblaViewport, EmblaContainer, EmblaSlide, EmblaDots } from "styles/Embla.styled";
+import DotButton from "components/carousel/EmblaDotButtons";
 import { Title, Text, Card } from "styles/mobile/Global.Mobile.styled";
 
 import { GAP_LIST_MOBILE, TITLE_LIST, INFO_LIST, CERT_LIST, TECH_LIST } from "constants/ProfileContent";

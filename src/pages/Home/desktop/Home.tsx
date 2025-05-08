@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useRelativeFontSize } from "hooks/useRelativeFontSize";
 
 import StarCanvas from "components/StarCanvas";
-
 import * as Style from "styles/desktop/Home.styled";
 
 import { INTRO } from "constants/HomeContent";
