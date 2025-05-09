@@ -23,6 +23,7 @@ export const ModalStyle: ReactModal.Styles = {
 	},
 	content: {
 		border: "none",
+		borderRadius: "20px",
 		background: "none",
 		padding: "0",
 		inset: "0",
@@ -31,7 +32,7 @@ export const ModalStyle: ReactModal.Styles = {
 
 export const ModalContent = styled.div`
 	width: 70vw;
-	height: 65vh;
+	height: 60vh;
 	padding: 0 2vw;
 	background-color: ${whiteColor};
 	position: absolute;
@@ -73,13 +74,8 @@ export const CloseButton = styled.button`
 	transform-origin: center center;
 	transition: transform 0.2s ease;
 	will-change: transform;
-	cursor: pointer;
 	position: relative;
-	left: 28%;
-
-	&:hover {
-		transform: scale(1.1);
-	}
+	left: 8%;
 `;
 
 export const CloseBtnIcon = styled.img.attrs({ src: CloseImage, alt: "Close Icon" })`

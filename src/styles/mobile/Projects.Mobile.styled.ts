@@ -11,14 +11,7 @@ export const ProjectDiv = styled.div`
 	height: auto;
 	background-color: ${whiteColor};
 	border-radius: 20px;
-	transition: transform 0.3s ease;
-	will-change: transform;
-	backface-visibility: hidden;
 	padding: 20px 30px;
-
-	&:hover {
-		transform: scale(1.03);
-	}
 `;
 
 export const Wrapper = styled.div`

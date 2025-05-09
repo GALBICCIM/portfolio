@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import * as Style from "styles/mobile/Projects.Mobile.styled";
 import { Text, Title } from "styles/mobile/Global.Mobile.styled";
-import ProjectModal from "components/modal/ProjectModal";
+import ProjectModalMobile from "components/modal/mobile/ProjectModal.Mobile";
 
 import { PROJECT_LIST } from "constants/ProjectContent";
 
@@ -52,7 +52,7 @@ const ProjectsMobile: React.FC = () => {
 					</div>
 				))}
 			</Style.Wrapper>
-			<ProjectModal isOpen={isOpen} onClose={closeModal} project={selectedProject} />
+			<ProjectModalMobile isOpen={isOpen} onClose={closeModal} project={selectedProject} />
 		</Style.Container>
 	);
 };

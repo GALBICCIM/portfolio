@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import EmblaCarousel from "components/carousel/EmblaCarousel";
-
 import { EmblaOptionsType } from "embla-carousel";
 
+import EmblaCarousel from "components/carousel/EmblaCarousel";
 import { GlobalFont } from "fonts/GlobalFont";
 
 const OPTIONS: EmblaOptionsType = {

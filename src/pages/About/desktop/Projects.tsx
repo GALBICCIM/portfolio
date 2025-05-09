@@ -4,7 +4,7 @@ import { useRelativeFontSize } from "hooks";
 
 import * as Style from "styles/desktop/Projects.styled";
 import { Text, Title } from "styles/desktop/Global.styled";
-import ProjectModal from "components/modal/ProjectModal";
+import ProjectModal from "components/modal/desktop/ProjectModal";
 
 import { PROJECT_LIST } from "constants/ProjectContent";
 
