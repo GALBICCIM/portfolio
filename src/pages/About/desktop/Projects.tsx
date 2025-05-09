@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRelativeFontSize } from "hooks";
 
 import * as Style from "styles/desktop/Projects.styled";
-import { Text, Title, Card } from "styles/desktop/Global.styled";
+import { Text, Title } from "styles/desktop/Global.styled";
 import ProjectModal from "components/modal/ProjectModal";
 
 import { PROJECT_LIST } from "constants/ProjectContent";
@@ -21,6 +21,7 @@ const Projects: React.FC = () => {
 	const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
 	const titleFontSize = useRelativeFontSize(48);
 	const contentFontSize = useRelativeFontSize(26);
+	const guideFontSize = useRelativeFontSize(18);
 
 	const openModal = (project: ProjectType) => {
 		setSelectedProject(project);
@@ -34,7 +35,7 @@ const Projects: React.FC = () => {
 
 	return (
 		<Style.Container>
-			<Card vw={93}>
+			{/* <Card vw={93}>
 				<Title rem={titleFontSize} font="NSansBold">
 					지금껏 이런 것들을 만들었어요.
 				</Title>
@@ -61,6 +62,30 @@ const Projects: React.FC = () => {
 					))}
 				</Style.Wrapper>
 			</Card>
+			<ProjectModal isOpen={isOpen} onClose={closeModal} project={selectedProject} /> */}
+
+			<Title rem={titleFontSize} font="NSansBold" color="white">
+				지금껏 이런 것들을 만들었어요.
+			</Title>
+			<Style.Wrapper>
+				{PROJECT_LIST.map((item, index) => (
+					<div>
+						<Style.ProjectDiv key={index} onClick={() => openModal(item)}>
+							<Style.TextWrapper>
+								<Text rem={titleFontSize} font="NSansBold">
+									{item.label}
+								</Text>
+								<Text rem={contentFontSize} font="NSansRegular">
+									{item.content}
+								</Text>
+							</Style.TextWrapper>
+						</Style.ProjectDiv>
+						<Text rem={guideFontSize} font="NSansRegular" color="gray">
+							Click to desc
+						</Text>
+					</div>
+				))}
+			</Style.Wrapper>
 			<ProjectModal isOpen={isOpen} onClose={closeModal} project={selectedProject} />
 		</Style.Container>
 	);

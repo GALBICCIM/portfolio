@@ -23,7 +23,7 @@ export const Title = styled.p<GlobalType>`
 	font-family: ${(props) => props.font};
 	display: flex;
 	justify-content: center;
-	color: black;
+	color: ${(props) => props.color || "black"};
 	margin: 4vh 0;
 	user-select: none;
 `;

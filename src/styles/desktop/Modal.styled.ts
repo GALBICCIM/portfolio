@@ -24,6 +24,8 @@ export const ModalStyle: ReactModal.Styles = {
 	content: {
 		border: "none",
 		background: "none",
+		padding: "0",
+		inset: "120px 200px",
 	},
 };
 

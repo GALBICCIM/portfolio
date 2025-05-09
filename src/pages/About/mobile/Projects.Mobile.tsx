@@ -39,7 +39,12 @@ const ProjectsMobile: React.FC = () => {
 						<div key={index}>
 							<div>
 								<Style.TitleButton>
-									<Text em={1.4} font="NSansBold" style={{ transform: "translateZ(0)", WebkitFontSmoothing: "antialiased" }} onClick={() => openModal(item)}>
+									<Text
+										em={1.4}
+										font="NSansBold"
+										style={{ transform: "translateZ(0)", WebkitFontSmoothing: "antialiased" }}
+										onClick={() => openModal(item)}
+									>
 										{item.label}
 									</Text>
 								</Style.TitleButton>

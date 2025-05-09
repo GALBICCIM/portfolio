@@ -19,9 +19,17 @@ export const EmblaContainer = styled.div`
 `;
 
 export const EmblaSlide = styled.div`
+	height: 100%;
 	flex: 0 0 100%;
 	min-width: 100%;
 	transform: translate3d(0, 0, 0);
+
+	&.scrollable-slide {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		scrollbar-width: none;
+		-webkit-overflow-scrolling: touch;
+	}
 `;
 
 export const EmblaButtons = styled.div`

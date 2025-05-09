@@ -40,7 +40,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 						{isMobile ? <HomeMobile selectedIndex={selectedIndex} /> : <Home selectedIndex={selectedIndex} />}
 					</EmblaSlide>
 					<EmblaSlide className="embla__slide">{isMobile ? <ProfileMobile /> : <Profile />}</EmblaSlide>
-					<EmblaSlide className="embla__slide">{isMobile ? <ProjectsMobile /> : <Projects />}</EmblaSlide>
+					<EmblaSlide className="embla__slide scrollable-slide">{isMobile ? <ProjectsMobile /> : <Projects />}</EmblaSlide>
 				</EmblaContainer>
 			</EmblaViewport>
 			<EmblaButtons>
