@@ -35,35 +35,6 @@ const Projects: React.FC = () => {
 
 	return (
 		<Style.Container>
-			{/* <Card vw={93}>
-				<Title rem={titleFontSize} font="NSansBold">
-					지금껏 이런 것들을 만들었어요.
-				</Title>
-				<Style.Wrapper>
-					{PROJECT_LIST.map((item, index) => (
-						<div key={index}>
-							<div>
-								<Style.TitleButton>
-									<Text
-										rem={titleFontSize}
-										font="NSansBold"
-										style={{ transform: "translateZ(0)", WebkitFontSmoothing: "antialiased" }}
-										onClick={() => openModal(item)}
-									>
-										{item.label}
-									</Text>
-								</Style.TitleButton>
-								<Style.HereIcon />
-							</div>
-							<Text rem={contentFontSize} font="NSansRegular">
-								{item.content}
-							</Text>
-						</div>
-					))}
-				</Style.Wrapper>
-			</Card>
-			<ProjectModal isOpen={isOpen} onClose={closeModal} project={selectedProject} /> */}
-
 			<Title rem={titleFontSize} font="NSansBold" color="white">
 				지금껏 이런 것들을 만들었어요.
 			</Title>

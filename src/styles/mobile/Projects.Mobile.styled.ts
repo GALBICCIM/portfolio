@@ -1,46 +1,38 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
-import ArrowImage from "assets/arrow.svg";
-
-const swing = keyframes`
-	0% {
-		transform: scaleX(-1) translate(0);
-	}
-	50% {
-		transform: scaleX(-1) translate(-15px);
-	}
-	100% {
-		transform: scaleX(-1) translate(0);
-	}
-`;
+import { whiteColor } from "constants/Colors";
 
 export const Container = styled.div`
 	width: 100vw;
-	height: 95dvh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+`;
+
+export const ProjectDiv = styled.div`
+	width: 70vw;
+	height: auto;
+	background-color: ${whiteColor};
+	border-radius: 20px;
+	transition: transform 0.3s ease;
+	will-change: transform;
+	backface-visibility: hidden;
+	padding: 20px 30px;
+
+	&:hover {
+		transform: scale(1.03);
+	}
 `;
 
 export const Wrapper = styled.div`
 	display: grid;
 	justify-content: center;
-	grid-template-columns: repeat(1, 300px);
-	row-gap: 40px;
-	margin-top: 50px;
+	grid-template-columns: repeat(1, auto);
+	row-gap: 6vh;
+	margin: 10vh 0;
 `;
 
-export const TitleButton = styled.button`
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-`;
-
-export const HereIcon = styled.img.attrs({ src: ArrowImage, alt: "Arrow Icon" })`
-	width: min(3vw, 3vh);
-	height: min(3vw, 3vh);
-	position: relative;
-	left: 5%;
-	animation: ${swing} ease-in-out 1s infinite;
-	user-select: none;
+export const TextWrapper = styled.div`
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	row-gap: 20px;
 `;
