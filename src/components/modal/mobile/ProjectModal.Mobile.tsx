@@ -34,14 +34,14 @@ const ProjectModalMobile: React.FC<ModalProps> = ({ isOpen, onClose, project }) 
 							<Style.CloseBtnIcon />
 						</Style.CloseButton>
 					</Style.Header>
-					<Text em={0.6} font="NSansRegular" color="gray">
+					<Text em={0.8} font="NSansRegular" color="gray">
 						{project.tag}
 					</Text>
 					<Style.Hr />
 					<Style.TextWrapper>
 						{project.description.map((item, index) => (
 							<Style.Li>
-								<Text em={0.8} font="NSansRegular" key={index} style={{ wordBreak: "break-all" }}>
+								<Text em={1} font="NSansRegular" key={index} style={{ wordBreak: "break-all" }}>
 									- {item}
 								</Text>
 							</Style.Li>

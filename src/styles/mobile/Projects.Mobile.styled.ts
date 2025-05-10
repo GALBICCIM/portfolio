@@ -12,6 +12,7 @@ export const ProjectDiv = styled.div`
 	background-color: ${whiteColor};
 	border-radius: 20px;
 	padding: 20px 30px;
+	cursor: pointer;
 `;
 
 export const Wrapper = styled.div`

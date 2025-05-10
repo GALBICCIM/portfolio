@@ -95,16 +95,9 @@ export const A = styled.a`
 	text-decoration: none;
 	width: min(5vw, 5vh);
 	height: min(5vw, 5vh);
-	transform-origin: center center;
-	transition: transform 0.2s ease;
-	will-change: transform;
 	cursor: pointer;
 	position: relative;
 	right: 4%;
-
-	&:hover {
-		transform: scale(1.1);
-	}
 `;
 
 export const GithubIcon = styled.img.attrs({ src: GithubImage, alt: "Github" })`
