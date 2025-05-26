@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
 	justify-content: center;
 	grid-template-columns: repeat(2, auto);
 	column-gap: 6vw;
-	row-gap: 12vh;
+	row-gap: 10vh;
 	margin: 10vh 0;
 `;
 
