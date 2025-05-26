@@ -15,12 +15,26 @@ export const PROJECT_LIST = [
 		label: "익명 게시판 백엔드 API",
 		content: "FastAPI를 사용한 게시글과 댓글 및 계정을 관리할 수 있는 REST API 기반 엔드포인트",
 		link: "FastAPI-board-backend",
-		tag: "#Python #FastAPI #env #bcrypt #MySQL #SQLAlchemy",
+		tag: "#Python #FastAPI #RESTful_API #env #bcrypt #MySQL #SQLAlchemy",
 		description: [
 			"FastAPI 기반 RESTful API를 설계 및 구현하여 계정 생성 및 게시글/댓글 CRUD 기능을 개발했습니다.",
 			"MySQL을 사용하여 사용자 정보를 데이터베이스에 저장할 수 있도록 설계했습니다.",
 			"bcrypt 암호화 해시 함수로 비밀번호를 데이터베이스에 저장하여 기밀성을 높였습니다.",
 			"env 파일을 사용하여 데이터베이스 URL 및 비밀번호를 환경변수로 안전하게 관리했습니다.",
+		],
+	},
+	{
+		label: "정적 게시판 백엔드",
+		content: "Spring Boot를 사용한 정적 게시판 백엔드",
+		link: "springboot-board-backend",
+		tag: "#Spring_Boot #MVC #Server-Side-Rendering",
+		description: [
+			"기존에 사용이 어려웠던 Spring을 Spring Boot로 보다 쉽게 개발했습니다.",
+			"Spring Boot 프레임워크로 MVC 패턴 기반 SSR 웹 애플리케이션을 구현했습니다.",
+			"글 작성, 보기, 삭제, 수정, 목록 조회 등 CRUD 기능을 구현했습니다.",
+			"MultipartFile로 첨부 파일을 받을 수 있도록 구현했습니다.",
+			"URL로 전달된 값을 기준으로 서버가 데이터를 조회하고, HTML을 렌더링합니다.",
+			"통합 테스트 코드를 추가하여 프로젝트의 안정성을 검토했습니다.",
 		],
 	},
 	{

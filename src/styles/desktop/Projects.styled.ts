@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 	grid-template-columns: repeat(2, auto);
 	column-gap: 6vw;
 	row-gap: 12vh;
-	margin-top: 10vh;
+	margin: 10vh 0;
 `;
 
 export const TextWrapper = styled.div`
