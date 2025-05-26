@@ -39,6 +39,7 @@ export const TECH_LIST = [
 		label: "Frameworks / Librarys",
 		value: [
 			{ path: "react.svg", text: "React" },
+			{ path: "nextjs.svg", text: "Next.js" },
 			{ path: "springboot.svg", text: "Spring Boot" },
 			{ path: "fastapi.svg", text: "FastAPI" },
 		],
