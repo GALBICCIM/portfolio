@@ -32,11 +32,11 @@ export const ModalStyle: ReactModal.Styles = {
 
 export const ModalContent = styled.div`
 	width: 70vw;
-	height: 60vh;
+	height: auto;
 	padding: 0 2vw;
 	background-color: ${whiteColor};
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -60%);
 	border: none;
