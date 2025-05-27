@@ -47,7 +47,7 @@ const ProjectsMobile: React.FC = () => {
 							</Style.TextWrapper>
 						</Style.ProjectDiv>
 						<Text em={1} font="NSansRegular" color="gray">
-							Click to desc
+							Click the box to view the desc
 						</Text>
 					</div>
 				))}

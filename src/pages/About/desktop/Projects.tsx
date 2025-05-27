@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
 							</Style.TextWrapper>
 						</Style.ProjectDiv>
 						<Text rem={guideFontSize} font="NSansRegular" color="gray">
-							Click to desc
+							Click the box to view the desc
 						</Text>
 					</div>
 				))}
