@@ -1,7 +1,7 @@
 export const PROJECT_LIST = [
 	{
-		label: "자율 동아리 홍보 사이트",
-		content: "React를 사용한 동아리 홍보 사이트 웹",
+		label: "자율 동아리 홍보 페이지",
+		content: "React를 사용한 동아리 홍보 웹",
 		link: "dfc-carousel-react-app",
 		tag: "#React #Typescript #CRA #slick-carousel #styled-components #Vercel",
 		description: [
@@ -12,15 +12,17 @@ export const PROJECT_LIST = [
 		],
 	},
 	{
-		label: "익명 게시판 백엔드 API",
-		content: "FastAPI를 사용한 게시글과 댓글 및 계정을 관리할 수 있는 REST API 기반 엔드포인트",
-		link: "FastAPI-board-backend",
-		tag: "#Python #FastAPI #RESTful_API #env #bcrypt #MySQL #SQLAlchemy",
+		label: "미세먼지 정보 조회 웹",
+		content: "React와 공공데이터포털 API를 사용한 미세먼지 정보 조회 사이트",
+		link: "dust-info",
+		tag: "#React #Typescript #react-router-dom #styled-components #Vite #ESLint #공공데이터포털",
 		description: [
-			"FastAPI 기반 RESTful API를 설계 및 구현하여 계정 생성 및 게시글/댓글 CRUD 기능을 개발했습니다.",
-			"MySQL을 사용하여 사용자 정보를 데이터베이스에 저장할 수 있도록 설계했습니다.",
-			"bcrypt 암호화 해시 함수로 비밀번호를 데이터베이스에 저장하여 기밀성을 높였습니다.",
-			"env 파일을 사용하여 데이터베이스 URL 및 비밀번호를 환경변수로 안전하게 관리했습니다.",
+			"Typescript 언어를 사용하여 API에서 받아올 데이터 Type을 정의해 요청 오류를 방지했습니다.",
+			"유틸 함수를 따로 파일에 정의해서 코드 재사용성과 유지보수성을 증가시켰습니다.",
+			"함수에 주석을 추가해서 함수를 사용할 때 기능을 간략하게 파악할 수 있도록 제공했습니다.",
+			"요청한 데이터를 효율적으로 사용할 수 있도록 파싱했습니다.",
+			"env 파일로 API 인증 키를 안전하게 보관했습니다.",
+			"아직 부족한 기능이 많아 계속해서 고민하며 추가 및 보수하고 있습니다.",
 		],
 	},
 	{
@@ -35,6 +37,18 @@ export const PROJECT_LIST = [
 			"MultipartFile로 첨부 파일을 받을 수 있도록 구현했습니다.",
 			"URL로 전달된 값을 기준으로 서버가 데이터를 조회하고, HTML을 렌더링합니다.",
 			"통합 테스트 코드를 추가하여 프로젝트의 안정성을 검토했습니다.",
+		],
+	},
+	{
+		label: "익명 게시판 백엔드 API",
+		content: "FastAPI를 사용한 게시글과 댓글 및 계정을 관리할 수 있는 REST API 기반 엔드포인트",
+		link: "FastAPI-board-backend",
+		tag: "#Python #FastAPI #RESTful_API #env #bcrypt #MySQL #SQLAlchemy",
+		description: [
+			"FastAPI 기반 RESTful API를 설계 및 구현하여 계정 생성 및 게시글/댓글 CRUD 기능을 개발했습니다.",
+			"MySQL을 사용하여 사용자 정보를 데이터베이스에 저장할 수 있도록 설계했습니다.",
+			"bcrypt 암호화 해시 함수로 비밀번호를 데이터베이스에 저장하여 기밀성을 높였습니다.",
+			"env 파일을 사용하여 데이터베이스 URL 및 비밀번호를 환경변수로 안전하게 관리했습니다.",
 		],
 	},
 	{
