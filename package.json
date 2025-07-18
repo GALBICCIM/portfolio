@@ -22,7 +22,7 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"start": "set BROWSER=none&&react-scripts start",
+		"start": "BROWSER=none react-scripts start",
 		"build": "react-scripts build",
 		"dev": "react-scripts dev",
 		"test": "react-scripts test",
