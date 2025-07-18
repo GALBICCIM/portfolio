@@ -1,5 +1,5 @@
-export const GAP_LIST = [2, 8, 1];
-export const GAP_LIST_MOBILE = [3, 7, 2];
+export const GAP_LIST = [2, 5, 1];
+export const GAP_LIST_MOBILE = [3, 5, 2];
 
 export const TITLE_LIST = ["인적 사항", "자격증 취득 내역", "기술 스택"];
 
@@ -18,6 +18,7 @@ export const INFO_LIST = [
 
 export const CERT_LIST = [
 	{ label: "- AWS Cloud Practitioner", date: "(2025. 4. 21.)" },
+	{ label: "- 정보기기운용기능사", date: "(2025. 7. 18.)" },
 	{ label: "- 정보처리기능사", date: "(2024. 4. 17.)" },
 	{ label: "- ITQ OA Master", date: "(2023. 11. 9.)" },
 	{ label: "- GTQ 포토샵 1급", date: "(2023. 9. 15.)" },
