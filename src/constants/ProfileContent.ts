@@ -1,5 +1,5 @@
-export const GAP_LIST = [2, 5, 1];
-export const GAP_LIST_MOBILE = [3, 5, 2];
+export const GAP_LIST = [2, 5, 2];
+export const GAP_LIST_MOBILE = [3, 5, 3];
 
 export const TITLE_LIST = ["인적 사항", "자격증 취득 내역", "기술 스택"];
 
@@ -31,26 +31,24 @@ export const TECH_LIST = [
 			{ path: "ts.svg", text: "Typescript" },
 			{ path: "js.svg", text: "Javascript" },
 			{ path: "python.svg", text: "Python" },
-			{ path: "java.svg", text: "Java" },
 			{ path: "html.svg", text: "HTML" },
 			{ path: "css.svg", text: "CSS" },
 		],
 	},
 	{
-		label: "Frameworks / Librarys",
+		label: "Tools",
 		value: [
 			{ path: "react.svg", text: "React" },
 			{ path: "nextjs.svg", text: "Next.js" },
-			{ path: "springboot.svg", text: "Spring Boot" },
-			{ path: "fastapi.svg", text: "FastAPI" },
+			{ path: "redux.svg", text: "Redux" },
+			{ path: "react_router_dom.svg", text: "React-Router-Dom" },
+			{ path: "styled_components.svg", text: "styled-components" },
+			{ path: "tailwindcss.svg", text: "Tailwind CSS" },
 		],
 	},
 	{
 		label: "Others",
 		value: [
-			{ path: "styled_components.svg", text: "Styled-Components" },
-			{ path: "react_router_dom.svg", text: "React-Router-Dom" },
-			{ path: "redux.svg", text: "Redux" },
 			{ path: "vite.svg", text: "Vite" },
 			{ path: "npm.svg", text: "NPM" },
 		],
