@@ -41,7 +41,6 @@ export const TECH_LIST = [
 			{ path: "react.svg", text: "React" },
 			{ path: "nextjs.svg", text: "Next.js" },
 			{ path: "redux.svg", text: "Redux" },
-			{ path: "react_router_dom.svg", text: "React-Router-Dom" },
 			{ path: "styled_components.svg", text: "styled-components" },
 			{ path: "tailwindcss.svg", text: "Tailwind CSS" },
 		],
