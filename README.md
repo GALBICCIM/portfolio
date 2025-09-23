@@ -7,3 +7,6 @@ React를 기반으로 제작되었으며, [www.galbiccim.xyz](https://www.galbic
 
 -  React.js
 -  Typescript
+<br />
+
+개 못만들었으니까 코드는 보지 마시길 바랍니다.
